@@ -7,7 +7,7 @@ import {Avgprice} from "./avgprice";
   providedIn: 'root'
 })
 export class AvgPriceService {
-  private _url:string = "http://api.binance.com/api/v3/avgPrice?symbol=";
+  private _url:string = "https://api.binance.com/api/v3/avgPrice?symbol=";
 
   constructor(private _httpClient: HttpClient) {
   };

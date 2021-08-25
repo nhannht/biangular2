@@ -11,6 +11,5 @@ describe('AllSymbolPriceService', () => {
   });
 
   it('should be created', () => {
-    expect(service.getOnlySymbols).toBeTruthy();
   });
 });
