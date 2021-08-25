@@ -1,0 +1,23 @@
+export interface AllDayData {
+  symbol: string,
+  priceChange: string,
+  priceChangePercent: string,
+  weightedAvgPrice: string,
+  prevClosePrice: string,
+  lastPrice: string,
+  lastQty: string,
+  bidPrice: string,
+  bidQty: string,
+  askPrice: string,
+  askQty: string,
+  openPrice: string,
+  highPrice: string,
+  lowPrice: string,
+  volume: string,
+  quoteVolume: string,
+  openTime: string,
+  closeTime: string,
+  firstId: string,
+  lastId: string,
+  count: string
+}

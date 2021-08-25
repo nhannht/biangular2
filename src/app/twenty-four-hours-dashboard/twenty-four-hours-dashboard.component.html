@@ -1,0 +1,15 @@
+<mat-card *ngIf="data">
+  <mat-card-header>
+    <mat-card-title>
+      {{data.symbol}}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>Open price: {{data.openPrice}}</mat-list-item>
+      <mat-list-item>Change: {{data.priceChange}}</mat-list-item>
+      <mat-list-item>Change percent: {{data.priceChangePercent}}</mat-list-item>
+      <mat-list-item>Last price: {{data.lastPrice}}</mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

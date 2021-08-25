@@ -1,0 +1,18 @@
+<div class="chart-container" style="display: block;">
+  <canvas baseChart id="canvas" height="50vh"
+          [datasets]="lineChartData"
+          [options]="lineChartOptions"
+          [labels]="lineChartLabels"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+  >
+  </canvas>
+  <mat-card fxLayout="column">
+    <mat-card-content fxFlex fxFlexAlign="center">
+      <p>Current price is {{currentPrice}}</p>
+      <p>Current time is {{currentTime}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

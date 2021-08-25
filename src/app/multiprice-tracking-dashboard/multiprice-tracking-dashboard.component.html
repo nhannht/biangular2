@@ -1,0 +1,9 @@
+<mat-list *ngFor="let symbol of symbolToShow">
+  <mat-list-item fxLayout="row"
+                 gdAlignRows="stretch">
+    <span fxFlex>{{symbol.symbol}} : {{symbol.price}}</span>
+    <button (click)="delete(symbol.symbol)" fxFlex  mat-icon-button>
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+  </mat-list>

@@ -1,0 +1,26 @@
+<div>
+  <form class="example-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Find the symbol here</mat-label>
+      <input
+        type="text"
+        matInput
+        #input
+        [formControl]="searchString"
+        maxlength="15"
+        placeholder="Examble ETHBTC"
+        [matAutocomplete]="auto">
+      <mat-autocomplete
+        #auto="matAutocomplete"
+      (optionSelected)="choose($event.option.value)"
+      >
+        <mat-option *ngFor="let result of results|async" [value]="result">
+          {{result}}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-hint align="end">{{input.value.length}} / 15</mat-hint>
+    </mat-form-field>
+  </form>
+
+
+</div>

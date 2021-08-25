@@ -1,0 +1,15 @@
+<div  fxLayout="column">
+  <div fxLayOut="row" fxFlex>
+    <div fxFlex>
+      <app-search-board [choosenValue]="choosenValue"
+                        (choosenEmitter)="setChoosenValue($event)"></app-search-board>
+    </div>
+    <mat-divider inset vertical></mat-divider>
+    <div fxFlex>
+      <app-multiprice-tracking-dashboard [choosenValue]="choosenValue"></app-multiprice-tracking-dashboard>
+    </div>
+  </div>
+  <div fxFlexFill>
+    <app-avg-price-dashboard [choosenValue]="choosenValue"></app-avg-price-dashboard>
+  </div>
+</div>
